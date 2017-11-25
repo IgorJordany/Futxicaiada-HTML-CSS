@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>exemplo-css3</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			div#um{
+				border: 1px solid #666;
+				border-radius: 8px;
+				width: 200px;
+				height: 200px;
+				box-shadow: 10px 10px 20px red;
+				background: linear-gradient(white, red, yellow, blue, green, black);
+				margin-bottom: 15px;
+			}
+			div#dois{
+				border: 1px solid #666;
+				border-radius: 8px;
+				width: 200px;
+				height: 200px;
+				background-color: green;
+				transition: 
+					background-color 0.5s,
+					padding 0.1s;
+				cursor: wait;
+				margin-bottom: 15px;
+			}
+			div#dois:hover{
+				background-color: red;
+				padding: 2px;
+			}
+			div#tres{
+				border: 1px solid #666;
+				border-radius: 8px;
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				transition: 
+					background-color 0.5s,
+					padding 0.1s;
+				cursor: wait;
+				animation: gira 1s infinite;
+				animation-timing-function: linear;
+			}
+			@keyframes gira {
+				0%{
+					transform: rotate(0deg);
+				}
+				50%{
+					margin-left: 1150px;
+				}
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="um"></div>
+		<div id="dois"></div>
+		<div id="tres"></div>
+	</body>
+</html>
